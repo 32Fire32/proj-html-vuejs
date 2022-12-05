@@ -50,7 +50,7 @@ export default {
       <div class="container">
         <!-- main header -->
         <div class="mainHeader center-align">
-          <div><img class="logo" src="../assets/logo.PNG" alt="" /></div>
+          <div><img class="logo" src="../assets/logo.PNG" alt="logo" /></div>
           <nav class="center-align">
             <div v-for="link in links">
               <span>{{ link }}</span>
@@ -62,8 +62,8 @@ export default {
         </div>
         <div class="mainTitle">
           <div class="title">
-            <h1>Ready</h1>
-            <h1>Team</h1>
+            <h1 class="first">Ready</h1>
+            <h1 class="second">Team</h1>
           </div>
           <p class="slogan">
             No matter what your company needs, we will be ready to assist you in
@@ -146,14 +146,9 @@ header {
         h1 {
           font-size: 5rem;
         }
-        h1:first-child {
-          color: var(--text-color-dark);
-        }
-        h1:last-child {
-          background-color: #d5e7e8;
-          color: var(--primary-color);
-          border-radius: 2px;
-        }
+      }
+      .slogan {
+        font-weight: 100;
       }
       .buttons {
         width: 80%;
