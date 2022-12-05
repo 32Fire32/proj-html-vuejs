@@ -99,6 +99,9 @@ section {
   }
   .image {
     width: 50%;
+    img {
+      display: block;
+    }
   }
 }
 .cards {
