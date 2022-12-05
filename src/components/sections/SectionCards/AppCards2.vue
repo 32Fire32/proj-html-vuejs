@@ -14,14 +14,17 @@ export default {
       <span><i :class="img"></i></span>
       <h4>{{ title }}</h4>
     </div>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p class="light-text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
   </div>
 </template>
 
 <style scoped lang="scss">
 .card {
-  width: 200px;
+  width: calc(var(--container) / 4 - 40px);
   color: #fff;
+  margin: 20px;
   i {
     color: var(--primary-color);
   }
@@ -31,6 +34,9 @@ export default {
   .top {
     display: flex;
     align-items: center;
+    span {
+      font-size: 1.3rem;
+    }
     img {
       width: 50px;
     }
@@ -40,6 +46,7 @@ export default {
   }
   .top h4 {
     color: #fff;
+    font-size: 1.6rem;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 10px;

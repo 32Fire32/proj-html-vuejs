@@ -33,7 +33,7 @@ export default {
 
 <template>
   <section>
-    <div class="container">
+    <div class="container center-align">
       <div class="text">
         <span class="introSection">ABOUT THE NETWORK</span>
         <div class="titleSection center-align">
@@ -42,7 +42,7 @@ export default {
         </div>
         <div class="sloganSection center-align">
           <div class="text">
-            <p>
+            <p class="light-text">
               For 12 years we have been providing audit and warranty, financial
               advice, risk advice, taxes and related services to selcet clients.
             </p>
@@ -55,10 +55,12 @@ export default {
         </div>
         <div class="buttons">
           <button class="btn">GET IN TOUCH</button>
-          <button class="btn-light">READ MORE</button>
+          <button class="btn-dark">READ MORE</button>
         </div>
       </div>
-      <div class="image"></div>
+      <div class="image">
+        <img src="../../assets/about-4.jpg" alt="" />
+      </div>
     </div>
   </section>
 </template>
@@ -66,34 +68,33 @@ export default {
 <style scoped lang="scss">
 section {
   background-color: black;
-  background-image: url(../../assets/about-4.jpg);
-  background-repeat: no-repeat;
-  background-position: right top;
 
   .titleSection {
     color: #fff;
     margin-bottom: 20px;
+    h2 {
+      font-size: 4rem;
+    }
     .firstAbout {
-      background-color: var(--primary-color);
-      padding: 5px;
+      background-color: #0e272d;
+      padding: 5px 20px;
       margin-right: 5px;
     }
   }
   .text {
     width: 50%;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     .introSection {
-      margin-top: 80px;
       margin-bottom: 20px;
       color: var(--primary-color);
     }
     p {
-      color: var(--text-color-light);
       margin-bottom: var(--margin-bottom);
     }
-    .buttons {
-      margin-bottom: 80px;
+    .btn-dark {
+      margin-left: 20px;
     }
   }
   .image {
