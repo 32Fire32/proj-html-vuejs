@@ -71,7 +71,7 @@ export default {
           </p>
           <div class="buttons">
             <button class="btn">GET IN TOUCH</button>
-            <button class="btn-light">GET IN TOUCH</button>
+            <button class="btn-light">READ MORE</button>
           </div>
         </div>
       </div>
@@ -155,6 +155,14 @@ header {
         margin-top: var(--margin-top);
         display: flex;
         justify-content: space-between;
+        .btn-light:hover {
+          background-color: var(--primary-color);
+          color: #fff;
+          border: 1px solid #fff;
+          padding: 10px 20px;
+          border-radius: 2px;
+          cursor: pointer;
+        }
       }
     }
   }
