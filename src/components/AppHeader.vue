@@ -1,26 +1,45 @@
 <script>
 export default {
   name: "AppHeader",
+  data() {
+    return {
+      links: ["HOME", "SERVICE", "ABOUT", "PROJECTS", "RESULTS"],
+    };
+  },
 };
 </script>
 
 <template>
   <header>
     <div class="bgc">
+      <!-- perheader -->
       <div class="container">
         <div class="preHeader">
           <div class="openhours">
-            <span>(clock) Open Hours: Mon - Sat - 9:00 - 18:00</span>
+            <span
+              ><i class="fa-solid fa-clock"></i> Open Hours: Mon - Sat - 9:00 -
+              18:00</span
+            >
           </div>
           <div class="infos">
             <div class="phone">
-              <span> (phone) +1(305) 1234-5678 </span>
+              <span> <i class="fa-solid fa-phone"></i> +1(305) 1234-5678 </span>
             </div>
             <div class="mail">
-              <span>(mail) hello@example.com</span>
+              <span
+                ><i class="fa-solid fa-envelope"></i> hello@example.com</span
+              >
             </div>
             <div class="social">
-              <span>(fb) (tw) (in )</span>
+              <span
+                ><a href="#"><i class="fa-brands fa-facebook"></i></a
+              ></span>
+              <span
+                ><a href="#"><i class="fa-brands fa-twitter"></i></a
+              ></span>
+              <span
+                ><a href="#"><i class="fa-brands fa-linkedin"></i></a
+              ></span>
             </div>
           </div>
         </div>
@@ -29,14 +48,13 @@ export default {
 
     <div class="hero">
       <div class="container">
+        <!-- main header -->
         <div class="mainHeader center-align">
-          <div class="logo">logo</div>
+          <div><img class="logo" src="../assets/logo.PNG" alt="" /></div>
           <nav class="center-align">
-            <div>LINK</div>
-            <div>LINK</div>
-            <div>LINK</div>
-            <div>LINK</div>
-            <div>LINK</div>
+            <div v-for="link in links">
+              <span>{{ link }}</span>
+            </div>
             <div class="butTouch">
               <button class="btn">GET IN TOUCH</button>
             </div>
@@ -80,6 +98,9 @@ header {
   .mainHeader {
     color: var(--text-color-dark);
     justify-content: space-between;
+    .logo {
+      width: 50%;
+    }
     nav {
       div {
         margin-left: 20px;
@@ -90,15 +111,24 @@ header {
     }
   }
 
+  span {
+    margin-left: var(--margin-left);
+    a {
+      color: var(--text-color-light);
+    }
+  }
+
   .bgc {
     background-color: #21333e;
     padding: 10px 0px;
   }
 
   .hero {
+    padding-top: 20px;
     height: 850px;
-    background-color: red;
     position: relative;
+    background-image: url(../assets/bg-parallax.png);
+    background-position: center;
     .mainTitle {
       width: calc(var(--container) / 3);
       position: absolute;
