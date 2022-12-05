@@ -23,7 +23,7 @@ export default {
   </div>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 .card {
   width: calc(var(--container) / 3 - 40px);
   background-color: #fff;
@@ -42,6 +42,7 @@ export default {
         background-color: transparent;
         .fa-arrow-right:hover {
           background-color: #d5e7e8;
+          color: var(--secondary-color);
           border-radius: 100%;
           cursor: pointer;
         }

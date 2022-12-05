@@ -1,5 +1,5 @@
 <script>
-import AppCards1 from "./Section1Cards/AppCards1.vue";
+import AppCards1 from "./SectionCards/AppCards1.vue";
 export default {
   name: "AppSection1",
   components: {
@@ -68,7 +68,7 @@ export default {
   </section>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 section {
   padding-top: 80px;
   padding-bottom: 80px;
