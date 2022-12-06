@@ -69,7 +69,7 @@ export default {
 section {
   background-color: black;
   overflow-x: hidden;
-
+  position: relative;
   .titleSection {
     color: #fff;
     margin-bottom: 20px;
@@ -105,6 +105,28 @@ section {
     }
   }
 }
+
+// section::before {
+//   width: 480px;
+//   height: 200px;
+//   position: absolute;
+//   top: -100px;
+//   left: calc(50% - 230px);
+//   background-image: url("../../assets/bullets.png");
+//   content: "";
+//   display: block;
+// }
+
+// section::after {
+//   width: 480px;
+//   height: 200px;
+//   position: absolute;
+//   bottom: -100px;
+//   left: calc(50% - 230px);
+//   background-image: url("../../assets/bullets.png");
+//   content: "";
+//   display: block;
+// }
 .cards {
   display: flex;
   flex-wrap: wrap;
