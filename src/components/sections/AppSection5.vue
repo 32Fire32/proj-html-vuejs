@@ -110,7 +110,7 @@ section {
       }
       img {
         position: absolute;
-        right: 20px;
+        right: 1.25rem;
         top: calc(50% - 8px);
       }
 

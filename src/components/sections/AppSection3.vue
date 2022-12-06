@@ -75,13 +75,13 @@ export default {
   flex-direction: column;
   align-items: center;
   .introSection {
-    margin-top: 80px;
-    margin-bottom: 20px;
+    margin-top: var(--margin-big);
+    margin-bottom: var(--margin-small);
   }
   .cards {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 80px;
+    margin-bottom: var(--margin-big);
   }
   .titleSection h2 {
     font-size: 3.5rem;
@@ -90,7 +90,7 @@ export default {
   nav {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: var(--margin);
     width: 70%;
 
     a {

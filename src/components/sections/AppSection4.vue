@@ -61,15 +61,15 @@ section {
   background-image: url(../../assets/bg-7.jpg);
   background-position: bottom;
   .top {
-    padding-top: 80px;
+    padding-top: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     .introSection {
-      margin-bottom: 20px;
+      margin-bottom: var(--margin-small);
     }
     .titleSection {
-      margin-bottom: 20px;
+      margin-bottom: var(--margin-small);
       h2 {
         font-size: 3.5rem;
       }
@@ -81,18 +81,18 @@ section {
   .firstAbout {
     color: #fff;
     background-color: var(--text-bg-title-green);
-    padding: 5px 20px;
-    margin-right: 5px;
+    padding: 0.3125rem 1.25rem;
+    margin-right: 0.3125rem;
   }
   .numbers {
-    padding: 40px;
+    padding: var(--padding);
     display: flex;
     width: 100%;
     justify-content: space-between;
-    margin-bottom: 80px;
+    margin-bottom: var(--margin-big);
     div {
       text-align: center;
-      padding: 20px;
+      padding: var(--padding-small);
     }
     h3 {
       color: var(--primary-color);
@@ -106,7 +106,7 @@ section {
   .black {
     background-color: #111117;
     .partners {
-      padding: 120px 40px;
+      padding: 7.5rem 2.5rem;
       justify-content: space-between;
       filter: brightness(400%);
       img {

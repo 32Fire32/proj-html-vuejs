@@ -70,8 +70,8 @@ export default {
 
 <style scoped lang="scss">
 section {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: var(--padding-big);
+  padding-bottom: var(--padding-big);
   background-color: #eef4ed;
   .introSection {
     color: var(--primary-color);
@@ -84,7 +84,7 @@ section {
       font-size: 3.5rem;
     }
     .second {
-      margin-left: 5px;
+      margin-left: 0.3125rem;
     }
   }
 }
@@ -94,7 +94,7 @@ section {
   justify-content: space-between;
 }
 p {
-  margin-top: 20px;
+  margin-top: var(--margin-small);
   font-weight: 100;
   color: var(--text-color-light);
 }
@@ -105,8 +105,8 @@ p {
     color: var(--primary-color);
     background-color: #eef4ed;
     border: 1px solid var(--primary-color);
-    padding: 10px 20px;
-    border-radius: 2px;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.125rem;
   }
   .text {
     width: 70%;
