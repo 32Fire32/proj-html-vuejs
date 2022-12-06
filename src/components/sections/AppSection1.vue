@@ -41,7 +41,9 @@ export default {
 <template>
   <section>
     <div class="container">
-      <span class="introSection">OUR BUSINESS AREA</span>
+      <div class="introSection">
+        <span>OUR BUSINESS AREA</span>
+      </div>
       <div class="titleSection">
         <h2 class="first">Excellence in</h2>
         <h2 class="second">Services</h2>
@@ -73,11 +75,7 @@ section {
   padding-top: var(--padding-big);
   padding-bottom: var(--padding-big);
   background-color: #eef4ed;
-  .introSection {
-    color: var(--primary-color);
-    font-weight: 900;
-    font-size: 0.7rem;
-  }
+
   .titleSection {
     display: flex;
     h2 {

@@ -50,7 +50,9 @@ export default {
 <template>
   <section>
     <div class="container">
-      <span class="introSection">WE DO MORE FOR EVERYONE</span>
+      <div class="introSection">
+        <span>WE DO MORE FOR EVERYONE</span>
+      </div>
       <div class="titleSection center-align">
         <h2 class="firstAbout">Actions &</h2>
         <h2 class="second">Projects</h2>

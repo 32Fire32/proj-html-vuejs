@@ -8,7 +8,9 @@ export default {
   <section>
     <div class="container">
       <div class="left">
-        <span class="introSection">SEND A MESSAGE</span>
+        <div class="introSection">
+          <span>SEND A MESSAGE</span>
+        </div>
         <div class="titleSection center-align">
           <h2>Get</h2>
           <h2 class="second">in Touch</h2>
@@ -128,6 +130,7 @@ section {
         padding: 1.25rem 0.625rem;
         margin: 0.625rem 0;
         width: calc(var(--container) * 0.7 / 2 - 30px);
+        appearance: none;
       }
       textarea {
         background-color: #ececec;
@@ -135,6 +138,7 @@ section {
         padding: 0.625rem;
         margin: 0.625rem 0;
         width: 100%;
+        resize: none;
       }
     }
   }

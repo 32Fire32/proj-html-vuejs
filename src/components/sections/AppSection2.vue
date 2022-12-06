@@ -35,7 +35,9 @@ export default {
   <section>
     <div class="container center-align">
       <div class="text">
-        <span class="introSection">ABOUT THE NETWORK</span>
+        <div class="introSection">
+          <span>ABOUT THE NETWORK</span>
+        </div>
         <div class="titleSection center-align">
           <h2 class="firstAbout">The</h2>
           <h2>Company</h2>

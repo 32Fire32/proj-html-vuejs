@@ -145,7 +145,7 @@ header {
     }
     nav {
       div {
-        margin-left: var(--margin-small);
+        margin-left: var(--margin);
         a {
           color: var(--text-color-dark);
         }
@@ -182,6 +182,7 @@ header {
         font-weight: 900;
         margin-bottom: var(--margin);
         h1 {
+          font-weight: 1200;
           font-size: 5rem;
         }
       }
