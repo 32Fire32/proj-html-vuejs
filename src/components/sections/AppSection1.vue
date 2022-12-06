@@ -80,6 +80,9 @@ section {
   }
   .titleSection {
     display: flex;
+    .second {
+      margin-left: 5px;
+    }
   }
 }
 .cards {

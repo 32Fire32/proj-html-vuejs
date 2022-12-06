@@ -15,16 +15,13 @@
   align-items: center;
 }
 
-// headings
-//first part
-
 .first {
   color: var(--text-color-dark);
 }
 
 .second {
-  background-color: #d5e7e8;
+  background-color: var(--text-bg-title-lightgreen);
   color: var(--primary-color);
   border-radius: 2px;
-  margin-left: 10px;
+  padding: 0 10px;
 }

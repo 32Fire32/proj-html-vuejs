@@ -68,6 +68,7 @@ export default {
 <style scoped lang="scss">
 section {
   background-color: black;
+  overflow-x: hidden;
 
   .titleSection {
     color: #fff;
@@ -76,7 +77,7 @@ section {
       font-size: 4rem;
     }
     .firstAbout {
-      background-color: #0e272d;
+      background-color: var(--text-bg-title-green);
       padding: 5px 20px;
       margin-right: 5px;
     }

@@ -81,6 +81,7 @@ export default {
   .cards {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 80px;
   }
   .titleSection h2 {
     font-size: 4rem;

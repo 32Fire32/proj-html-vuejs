@@ -8,8 +8,10 @@
   cursor: pointer;
 }
 
+//variant
 .btn-light {
   color: var(--primary-color);
+  background-color: #fff;
   border: 1px solid var(--primary-color);
   padding: 10px 20px;
   border-radius: 2px;
