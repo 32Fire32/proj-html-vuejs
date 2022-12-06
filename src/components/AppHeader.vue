@@ -1,6 +1,10 @@
 <script>
+import AppBackground from "./BackgroundHero/AppBackground.vue";
 export default {
   name: "AppHeader",
+  components: {
+    AppBackground,
+  },
   data() {
     return {
       links: ["HOME", "SERVICE", "ABOUT", "PROJECTS", "RESULTS"],
@@ -12,7 +16,7 @@ export default {
 <template>
   <header>
     <div class="bgc">
-      <!-- perheader -->
+      <!-- preheader -->
       <div class="container">
         <div class="preHeader">
           <div class="openhours">
@@ -47,13 +51,18 @@ export default {
     </div>
 
     <div class="hero">
+      <AppBackground />
+
       <div class="container">
         <!-- main header -->
         <div class="mainHeader center-align">
           <div><img class="logo" src="../assets/logo.PNG" alt="logo" /></div>
+          <!-- navigation -->
           <nav class="center-align">
             <div v-for="link in links">
-              <span>{{ link }}</span>
+              <span
+                ><a href="">{{ link }}</a></span
+              >
             </div>
             <div class="butTouch">
               <button class="btn">GET IN TOUCH</button>
@@ -76,15 +85,43 @@ export default {
         </div>
       </div>
     </div>
+    <div class="v-nav">
+      <div></div>
+      <div class="full"></div>
+      <div></div>
+    </div>
   </header>
 </template>
 
 <style scoped lang="scss">
 header {
   color: var(--text-color-light);
+  overflow-x: hidden;
+  overflow-y: hidden;
+  .v-nav {
+    div {
+      height: 50px;
+      width: 10px;
+      border: 1px solid var(--primary-color);
+      border-radius: 20px;
+    }
+    .full {
+      height: 50px;
+      width: 10px;
+      border: 1px solid var(--primary-color);
+      border-radius: 20px;
+    }
+  }
   .preHeader {
     display: flex;
     justify-content: space-between;
+    span {
+      margin-left: var(--margin-left);
+      a {
+        color: var(--text-color-light);
+      }
+    }
+
     .infos {
       display: flex;
       justify-content: space-between;
@@ -104,17 +141,13 @@ header {
     nav {
       div {
         margin-left: 20px;
+        a {
+          color: var(--text-color-dark);
+        }
       }
       .butTouch {
         margin-left: var(--margin-left);
       }
-    }
-  }
-
-  span {
-    margin-left: var(--margin-left);
-    a {
-      color: var(--text-color-light);
     }
   }
 

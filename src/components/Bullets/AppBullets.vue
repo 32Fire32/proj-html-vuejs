@@ -6,7 +6,7 @@ export default {
 
 <template>
   <div class="bullets">
-    <img src="../../../assets/bullets.png" alt="bullets" />
+    <img src="../../assets/bullets.png" alt="bullets" />
   </div>
 </template>
 

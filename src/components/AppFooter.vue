@@ -88,11 +88,11 @@ export default {
       </div>
     </div>
     <div class="postfooter">
-      <div class="container wrapper">
+      <div class="container wrapper light-text">
         <span>Enjoy the proce. We are tracking any intention of piracy</span>
         <span
-          >© 2020 NEXGEN is Proudly Powered by<span class="green">Codings</span
-          >.</span
+          >© 2020 NEXGEN is Proudly Powered by
+          <span class="green">Codings</span>.</span
         >
       </div>
     </div>
@@ -102,7 +102,7 @@ export default {
 <style scoped lang="scss">
 footer {
   .bg {
-    background-color: #111117;
+    background-color: var(--secondary-color);
     padding-top: var(--margin-big-top);
     padding-bottom: var(--margin-big-top);
   }
@@ -111,12 +111,25 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .btn-dark {
+      background-color: var(--secondary-color);
+    }
+    .btn-dark:hover {
+      background-color: var(--primary-color);
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 2px;
+      cursor: pointer;
+      border: 1px solid var(--primary-color);
+    }
 
     .card {
       width: calc(var(--container) / 4 - 20px);
-      margin: 10px;
+
       img {
         width: 70%;
+        margin-bottom: 10px;
       }
     }
   }

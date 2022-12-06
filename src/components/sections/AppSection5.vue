@@ -70,6 +70,21 @@ section {
 }
 .container {
   display: flex;
+  .btn-light:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  .btn:hover {
+    color: var(--primary-color);
+    background-color: #fff;
+    border: 1px solid var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 2px;
+  }
 
   .titleSection {
     margin-bottom: 20px;

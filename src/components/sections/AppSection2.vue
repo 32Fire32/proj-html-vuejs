@@ -44,7 +44,7 @@ export default {
           <div class="text">
             <p class="light-text">
               For 12 years we have been providing audit and warranty, financial
-              advice, risk advice, taxes and related services to selcet clients.
+              advice, risk advice, taxes and related services to select clients.
             </p>
           </div>
         </div>
@@ -67,7 +67,7 @@ export default {
 
 <style scoped lang="scss">
 section {
-  background-color: black;
+  background-color: var(--secondary-color);
   overflow-x: hidden;
   position: relative;
   .titleSection {
@@ -87,6 +87,12 @@ section {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: var(--margin-bottom);
+    }
     .introSection {
       margin-bottom: 20px;
       color: var(--primary-color);
@@ -96,6 +102,18 @@ section {
     }
     .btn-dark {
       margin-left: 20px;
+      background-color: #111117;
+      &:hover {
+        background-color: var(--primary-color);
+        cursor: pointer;
+      }
+    }
+    .btn:hover {
+      color: #fff;
+      background-color: var(--secondary-color);
+      border: 1px solid var(--primary-color);
+      padding: 10px 20px;
+      border-radius: 2px;
     }
   }
   .image {
@@ -104,32 +122,5 @@ section {
       display: block;
     }
   }
-}
-
-// section::before {
-//   width: 480px;
-//   height: 200px;
-//   position: absolute;
-//   top: -100px;
-//   left: calc(50% - 230px);
-//   background-image: url("../../assets/bullets.png");
-//   content: "";
-//   display: block;
-// }
-
-// section::after {
-//   width: 480px;
-//   height: 200px;
-//   position: absolute;
-//   bottom: -100px;
-//   left: calc(50% - 230px);
-//   background-image: url("../../assets/bullets.png");
-//   content: "";
-//   display: block;
-// }
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: var(--margin-bottom);
 }
 </style>

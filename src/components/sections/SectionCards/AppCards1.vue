@@ -10,15 +10,17 @@ export default {
 
 <template>
   <div class="card">
-    <div class="top">
-      <img :src="`src/assets/svg-${img}.svg`" :alt="title" />
-      <div class="btncard">
-        <button><i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+    <div class="tb-padding">
+      <div class="top">
+        <img :src="`src/assets/svg-${img}.svg`" :alt="title" />
+        <div class="btncard">
+          <button><i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+        </div>
       </div>
-    </div>
-    <div class="bottom">
-      <h4>{{ title }}</h4>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <div class="bottom">
+        <h4>{{ title }}</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
     </div>
   </div>
 </template>
@@ -27,9 +29,9 @@ export default {
 .card {
   width: calc(var(--container) / 3 - 40px);
   background-color: #fff;
-  padding: 30px;
-  margin: 20px;
   border-radius: 10px;
+  padding: 30px;
+  margin: 20px 0;
   .top {
     display: flex;
     justify-content: space-between;

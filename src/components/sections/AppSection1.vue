@@ -88,6 +88,7 @@ section {
 .cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 p {
   margin-top: 20px;
@@ -97,6 +98,13 @@ p {
 .sloganSection {
   justify-content: space-between;
   width: 100%;
+  .btn:hover {
+    color: var(--primary-color);
+    background-color: #eef4ed;
+    border: 1px solid var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 2px;
+  }
   .text {
     width: 70%;
   }

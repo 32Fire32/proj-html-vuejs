@@ -22,9 +22,9 @@ export default {
 
 <style scoped lang="scss">
 .card {
-  width: calc(var(--container) / 4 - 40px);
+  width: calc(var(--container) / 4 - 10px);
   color: #fff;
-  margin: 20px;
+  margin: 20px 0px;
   i {
     color: var(--primary-color);
   }

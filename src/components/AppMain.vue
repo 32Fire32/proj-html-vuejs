@@ -4,7 +4,7 @@ import AppSection2 from "./sections/AppSection2.vue";
 import AppSection3 from "./sections/AppSection3.vue";
 import AppSection4 from "./sections/AppSection4.vue";
 import AppSection5 from "./sections/AppSection5.vue";
-import AppBullets from "./sections/Bullets/AppBullets.vue";
+import AppBullets from "./Bullets/AppBullets.vue";
 export default {
   name: "AppMain",
   components: {
