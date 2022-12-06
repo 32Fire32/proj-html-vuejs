@@ -84,8 +84,8 @@ export default {
     margin-bottom: 80px;
   }
   .titleSection h2 {
-    font-size: 4rem;
-    margin-bottom: var(--margin-bottom);
+    font-size: 3.5rem;
+    margin-bottom: var(--margin);
   }
   nav {
     display: flex;

@@ -87,10 +87,10 @@ section {
   }
 
   .titleSection {
-    margin-bottom: 20px;
+    margin-bottom: var(--margin-small);
 
     h2 {
-      font-size: 4rem;
+      font-size: 3.5rem;
     }
   }
   .left {

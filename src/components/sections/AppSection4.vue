@@ -71,7 +71,7 @@ section {
     .titleSection {
       margin-bottom: 20px;
       h2 {
-        font-size: 4rem;
+        font-size: 3.5rem;
       }
       h2:last-child {
         color: #fff;

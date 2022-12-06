@@ -22,9 +22,9 @@ export default {
 
 <style scoped lang="scss">
 .card {
-  width: calc(var(--container) / 4 - 10px);
+  width: calc(var(--container) / 4 - 0.625rem);
   color: #fff;
-  margin: 20px 0px;
+  margin: 1.25rem 0rem;
   i {
     color: var(--primary-color);
   }
@@ -38,7 +38,7 @@ export default {
       font-size: 1.3rem;
     }
     img {
-      width: 50px;
+      width: 3.125rem;
     }
     .fa-arrow-right {
       font-size: 1.2rem;
@@ -47,9 +47,9 @@ export default {
   .top h4 {
     color: #fff;
     font-size: 1.6rem;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 10px;
+    margin-top: var(--margin-small);
+    margin-bottom: var(--margin-small);
+    margin-left: 0.625rem;
   }
 }
 </style>

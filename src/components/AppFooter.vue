@@ -1,12 +1,10 @@
 <script>
 import AppCardsFooter from "./sections/SectionCards/AppCardsFooter.vue";
-import porco from "./sections/AppSection1.vue";
 
 export default {
   name: "AppFooter",
   components: {
     AppCardsFooter,
-    porco,
   },
 
   data() {
@@ -103,8 +101,8 @@ export default {
 footer {
   .bg {
     background-color: var(--secondary-color);
-    padding-top: var(--margin-big-top);
-    padding-bottom: var(--margin-big-top);
+    padding-top: var(--margin-big);
+    padding-bottom: var(--margin-big);
   }
 
   .row {
@@ -118,25 +116,25 @@ footer {
       background-color: var(--primary-color);
       color: #fff;
       border: none;
-      padding: 10px 20px;
-      border-radius: 2px;
+      padding: 0.625rem 1.25rem;
+      border-radius: 0.125rem;
       cursor: pointer;
       border: 1px solid var(--primary-color);
     }
 
     .card {
-      width: calc(var(--container) / 4 - 20px);
+      width: calc(var(--container) / 4 - 1.25rem);
 
       img {
         width: 70%;
-        margin-bottom: 10px;
+        margin-bottom: 0.625rem;
       }
     }
   }
   .postfooter {
     background-color: black;
     .wrapper {
-      padding: 40px 0;
+      padding: 2.5rem 0;
       color: var(--text-color-light);
       display: flex;
       justify-content: space-between;
@@ -148,23 +146,23 @@ footer {
 }
 .right {
   width: 30%;
-  padding: 20px;
+  padding: var(--padding-small);
   .t {
-    margin-bottom: 20px;
+    margin-bottom: var(--margin-small);
   }
   h3 {
-    margin-bottom: 20px;
+    margin-bottom: var(--margin-small);
   }
 }
 .infos {
-  margin: 10px 0;
+  margin: 0.625rem 0;
   color: --text-color-light;
   display: flex;
   flex-direction: column;
 
   .fa-solid {
-    margin-right: 10px;
-    margin: 10px 0;
+    margin-right: 0.625rem;
+    margin: 0.625rem 0;
   }
 }
 </style>

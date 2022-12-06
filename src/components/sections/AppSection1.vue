@@ -80,6 +80,9 @@ section {
   }
   .titleSection {
     display: flex;
+    h2 {
+      font-size: 3.5rem;
+    }
     .second {
       margin-left: 5px;
     }

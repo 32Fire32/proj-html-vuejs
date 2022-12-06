@@ -74,7 +74,7 @@ export default {
             <h1 class="first">Ready</h1>
             <h1 class="second">Team</h1>
           </div>
-          <p class="slogan">
+          <p class="slogan light-text">
             No matter what your company needs, we will be ready to assist you in
             the best possible way.
           </p>
@@ -99,24 +99,29 @@ header {
   overflow-x: hidden;
   overflow-y: hidden;
   .v-nav {
+    position: absolute;
+    right: 1%;
+    top: 50%;
     div {
-      height: 50px;
-      width: 10px;
-      border: 1px solid var(--primary-color);
-      border-radius: 20px;
+      margin: 0.625rem 0;
+      height: 3.125rem;
+      width: 0.625rem;
+      border: 0.0625rem solid var(--primary-color);
+      border-radius: 1.25rem;
     }
     .full {
-      height: 50px;
-      width: 10px;
-      border: 1px solid var(--primary-color);
-      border-radius: 20px;
+      height: 3.125rem;
+      width: 0.625rem;
+      border: 0.0625rem solid var(--primary-color);
+      background-color: var(--primary-color);
+      border-radius: 1.25rem;
     }
   }
   .preHeader {
     display: flex;
     justify-content: space-between;
     span {
-      margin-left: var(--margin-left);
+      margin-left: var(--margin);
       a {
         color: var(--text-color-light);
       }
@@ -128,7 +133,7 @@ header {
       .social,
       .mail,
       .phone {
-        margin-left: var(--margin-left);
+        margin-left: var(--margin);
       }
     }
   }
@@ -140,25 +145,25 @@ header {
     }
     nav {
       div {
-        margin-left: 20px;
+        margin-left: var(--margin-small);
         a {
           color: var(--text-color-dark);
         }
       }
       .butTouch {
-        margin-left: var(--margin-left);
+        margin-left: var(--margin);
       }
     }
   }
 
   .bgc {
     background-color: #21333e;
-    padding: 10px 0px;
+    padding: 0.625rem 0rem;
   }
 
   .hero {
-    padding-top: 20px;
-    height: 850px;
+    padding-top: var(--padding-small);
+    height: 53.125rem;
     position: relative;
     background-image: url(../assets/bg-parallax.png);
     background-position: center;
@@ -175,25 +180,22 @@ header {
       .title {
         display: flex;
         font-weight: 900;
-        margin-bottom: var(--margin-bottom);
+        margin-bottom: var(--margin);
         h1 {
           font-size: 5rem;
         }
       }
-      .slogan {
-        font-weight: 100;
-      }
       .buttons {
         width: 80%;
-        margin-top: var(--margin-top);
+        margin-top: var(--margin);
         display: flex;
         justify-content: space-between;
         .btn-light:hover {
           background-color: var(--primary-color);
           color: #fff;
-          border: 1px solid #fff;
-          padding: 10px 20px;
-          border-radius: 2px;
+          border: 0.0625rem solid #fff;
+          padding: 0.625rem 1.25rem;
+          border-radius: 0.125rem;
           cursor: pointer;
         }
       }

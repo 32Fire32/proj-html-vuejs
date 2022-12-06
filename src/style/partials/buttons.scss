@@ -3,25 +3,25 @@
   background-color: var(--primary-color);
   color: #fff;
   border: none;
-  padding: 10px 20px;
-  border-radius: 2px;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.125rem;
   cursor: pointer;
-  border: 1px solid var(--primary-color);
+  border: 0.0625rem solid var(--primary-color);
 }
 
-//variant
+//variants
 .btn-light {
   color: var(--primary-color);
   background-color: #fff;
-  border: 1px solid var(--primary-color);
-  padding: 10px 20px;
-  border-radius: 2px;
+  border: 0.0625rem solid var(--primary-color);
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.125rem;
 }
 
 .btn-dark {
   color: #fff;
-  border: 1px solid var(--primary-color);
-  padding: 10px 20px;
-  border-radius: 2px;
+  border: 0.0625rem solid var(--primary-color);
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.125rem;
   background-color: black;
 }

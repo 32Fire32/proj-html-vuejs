@@ -74,7 +74,7 @@ section {
     color: #fff;
     margin-bottom: 20px;
     h2 {
-      font-size: 4rem;
+      font-size: 3.5rem;
     }
     .firstAbout {
       background-color: var(--text-bg-title-green);

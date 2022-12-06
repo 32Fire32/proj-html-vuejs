@@ -18,8 +18,10 @@ export default {
         </div>
       </div>
       <div class="bottom">
-        <h4>{{ title }}</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <h3>{{ title }}</h3>
+        <p class="light-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
       </div>
     </div>
   </div>
@@ -27,39 +29,49 @@ export default {
 
 <style scoped lang="scss">
 .card {
-  width: calc(var(--container) / 3 - 40px);
+  width: calc(var(--container) / 3 - 2.5rem);
   background-color: #fff;
-  border-radius: 10px;
-  padding: 30px;
-  margin: 20px 0;
+  border-radius: 0.625rem;
+  padding: 1.875rem;
+  margin: 1.25rem 0;
   .top {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     .btncard {
       text-align: center;
-      line-height: 1px;
+      line-height: 0.0625rem;
       button {
         border: none;
-        color: var(--primary-color);
+        color: var(--text-bg-title-lightgreen);
         background-color: transparent;
-        .fa-arrow-right:hover {
+        i {
+          font-size: 1.5rem;
+          padding: 10px;
+        }
+        i:hover {
           background-color: #d5e7e8;
-          color: var(--secondary-color);
+          color: var(--primary-color);
           border-radius: 100%;
+          padding: 10px;
           cursor: pointer;
         }
       }
     }
     img {
-      width: 50px;
+      width: 3.125rem;
     }
     .fa-arrow-right {
       font-size: 1.2rem;
     }
   }
-  .bottom h4 {
-    margin-top: 20px;
-    margin-bottom: 20px;
+  .bottom {
+    width: 80%;
+  }
+  .bottom h3 {
+    margin-top: var(--margin-small);
+    margin-bottom: var(--margin-small);
+    font-size: 1.6rem;
   }
 }
 </style>

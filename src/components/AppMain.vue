@@ -40,12 +40,12 @@ export default {
   .top {
     position: absolute;
     z-index: 20;
-    top: -30px;
-    left: calc(50% - 60px);
+    top: -1.875rem;
+    left: calc(50% - 3.75rem);
   }
   .bottom {
     position: absolute;
-    bottom: -25px;
+    bottom: -1.5625rem;
     left: calc(50% - 60px);
   }
 }
