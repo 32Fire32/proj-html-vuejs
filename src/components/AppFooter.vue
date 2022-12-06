@@ -54,7 +54,7 @@ export default {
     <div class="bg">
       <div class="container">
         <div class="row">
-          <div class="card">
+          <div class="card grow">
             <img src="../assets/logoinv.png" alt="logobl" />
             <p class="light-text t">
               A functional HTML Template for Corporate & Business.
@@ -87,7 +87,7 @@ export default {
     </div>
     <div class="postfooter">
       <div class="container wrapper light-text">
-        <span>Enjoy the proce. We are tracking any intention of piracy</span>
+        <span>Enjoy the price. We are tracking any intention of piracy</span>
         <span
           >© 2020 NEXGEN is Proudly Powered by
           <span class="green">Codings</span>.</span
@@ -109,6 +109,13 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .card {
+      width: calc(var(--container) / 4 - 1.25rem);
+      img {
+        width: 50%;
+        margin-bottom: 0.625rem;
+      }
+    }
     .btn-dark {
       background-color: var(--secondary-color);
     }
@@ -120,15 +127,6 @@ footer {
       border-radius: 0.125rem;
       cursor: pointer;
       border: 1px solid var(--primary-color);
-    }
-
-    .card {
-      width: calc(var(--container) / 4 - 1.25rem);
-
-      img {
-        width: 70%;
-        margin-bottom: 0.625rem;
-      }
     }
   }
   .postfooter {

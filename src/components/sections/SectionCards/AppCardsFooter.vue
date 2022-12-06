@@ -3,7 +3,7 @@ export default {
   name: "AppCardsFooter",
   props: {
     title: String,
-    link: String,
+    link: Array,
   },
 };
 </script>
@@ -24,25 +24,25 @@ export default {
 <style scoped lang="scss">
 .linknav {
   background-color: #19191f;
-  padding: 20px;
+  padding: var(--padding-small);
   color: #fff;
   display: flex;
   justify-content: center;
   h3 {
-    margin-bottom: 20px;
+    margin-bottom: var(--margin-small);
   }
   ul {
     list-style: none;
 
     li {
-      margin-bottom: 10px;
+      margin-bottom: 0.625rem;
       a {
         text-decoration: none;
         color: var(--text-color-light);
       }
 
       i {
-        margin-right: 10px;
+        margin-right: 0.625rem;
       }
     }
   }

@@ -28,11 +28,14 @@ export default {
           </div>
           <div class="middle">
             <input type="email" placeholder="Email" />
-            <select name="info" id="info">
-              <option value="" selected>More Info</option>
-              <option value="faq">FAQ</option>
-              <option value="help">Help</option>
-            </select>
+            <div class="info">
+              <select name="info" id="info">
+                <option value="" selected>More Info</option>
+                <option value="faq">FAQ</option>
+                <option value="help">Help</option>
+              </select>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
           </div>
           <div class="bottom">
             <textarea placeholder="Message" rows="6" cols="50"></textarea>
@@ -114,6 +117,15 @@ section {
         position: absolute;
         right: 1.25rem;
         top: calc(50% - 8px);
+      }
+      .middle {
+        position: relative;
+        i {
+          position: absolute;
+          color: gray;
+          right: 1.25rem;
+          top: calc(50% - 8px);
+        }
       }
 
       .up,
