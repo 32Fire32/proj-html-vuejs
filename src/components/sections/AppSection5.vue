@@ -10,7 +10,7 @@ export default {
       <div class="left">
         <span class="introSection">SEND A MESSAGE</span>
         <div class="titleSection center-align">
-          <h2 class="firstAbout">Get</h2>
+          <h2>Get</h2>
           <h2 class="second">in Touch</h2>
         </div>
         <div class="light-text">
@@ -18,7 +18,10 @@ export default {
         </div>
         <form>
           <div class="up">
-            <input type="text" placeholder="Name" />
+            <div class="name">
+              <input class="rel" type="text" placeholder="Name" />
+              <img src="../../assets/image (1).png" alt="form" />
+            </div>
             <input type="text" placeholder="Phone" />
           </div>
           <div class="middle">
@@ -66,10 +69,11 @@ export default {
 
 <style scoped lang="scss">
 section {
-  padding: 80px 0px;
+  padding: 5rem 0rem;
 }
 .container {
   display: flex;
+
   .btn-light:hover {
     background-color: var(--primary-color);
     color: #fff;
@@ -95,25 +99,53 @@ section {
   }
   .left {
     width: 70%;
-    padding: 20px;
+    padding: var(--padding-small);
     form {
-      margin-top: var(--margin-top);
+      margin-top: var(--margin);
+      .up {
+        position: relative;
+      }
+      .name {
+        position: relative;
+      }
+      img {
+        position: absolute;
+        right: 20px;
+        top: calc(50% - 8px);
+      }
+
       .up,
       .middle,
       .bottom {
         display: flex;
-        margin-bottom: 20px;
+        justify-content: space-between;
+        margin-bottom: var(--margin-small);
+      }
+      input,
+      select {
+        background-color: #ececec;
+        border: none;
+        padding: 1.25rem 0.625rem;
+        margin: 0.625rem 0;
+        width: calc(var(--container) * 0.7 / 2 - 30px);
+      }
+      textarea {
+        background-color: #ececec;
+        border: none;
+        padding: 0.625rem;
+        margin: 0.625rem 0;
+        width: 100%;
       }
     }
   }
   .right {
     width: 30%;
-    padding: 20px;
+    padding: var(--padding-small);
     .t {
-      margin-bottom: 20px;
+      margin-bottom: var(--margin-small);
     }
     h3 {
-      margin-bottom: 20px;
+      margin-bottom: var(--margin-small);
     }
   }
 }
@@ -121,31 +153,16 @@ section {
   color: var(--primary-color);
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: var(--margin-small);
+  margin-bottom: var(--margin-small);
   .fa-solid {
     background-color: var(--text-bg-title-lightgreen);
     border-radius: 100%;
-    padding: 10px;
-    margin: 10px 0;
+    padding: 0.625rem;
+    margin: 0.625rem 0;
   }
 }
 select {
   color: gray;
-}
-input,
-select {
-  background-color: #ececec;
-  border: none;
-  padding: 20px 10px;
-  margin: 10px;
-  width: 50%;
-}
-textarea {
-  background-color: #ececec;
-  border: none;
-  padding: 10px;
-  margin: 10px;
-  width: 100%;
 }
 </style>

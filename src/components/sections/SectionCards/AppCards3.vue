@@ -28,19 +28,19 @@ export default {
 
 <style scoped lang="scss">
 .card {
-  width: calc(var(--container) / 3 - 40px);
-  margin: 20px;
+  width: calc(var(--container) / 3 - 2.5rem);
+  margin: var(--margin-small);
   position: relative;
   a {
     text-decoration: none;
     color: #fff;
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 1.25rem;
+    right: 1.25rem;
   }
   img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     filter: brightness(60%);
   }
 }
@@ -68,7 +68,7 @@ p {
 }
 
 .card:hover img {
-  filter: blur(2px) brightness(40%);
+  filter: blur(0.125rem) brightness(40%);
 }
 .card:hover .hide {
   display: block;

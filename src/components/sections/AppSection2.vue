@@ -72,14 +72,14 @@ section {
   position: relative;
   .titleSection {
     color: #fff;
-    margin-bottom: 20px;
+    margin-bottom: var(--margin);
     h2 {
       font-size: 3.5rem;
     }
     .firstAbout {
       background-color: var(--text-bg-title-green);
-      padding: 5px 20px;
-      margin-right: 5px;
+      padding: 0.3125rem 1.25rem;
+      margin-right: 0.3125rem;
     }
   }
   .text {
@@ -91,18 +91,18 @@ section {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      margin-bottom: var(--margin-bottom);
+      margin-bottom: var(--margin);
     }
     .introSection {
-      margin-bottom: 20px;
+      margin-bottom: var(--margin-small);
       color: var(--primary-color);
     }
     p {
-      margin-bottom: var(--margin-bottom);
+      margin-bottom: var(--margin-small);
     }
     .btn-dark {
-      margin-left: 20px;
-      background-color: #111117;
+      margin-left: var(--margin-small);
+      background-color: var(--secondary-color);
       &:hover {
         background-color: var(--primary-color);
         cursor: pointer;
@@ -111,9 +111,9 @@ section {
     .btn:hover {
       color: #fff;
       background-color: var(--secondary-color);
-      border: 1px solid var(--primary-color);
-      padding: 10px 20px;
-      border-radius: 2px;
+      border: 0.0625rem solid var(--primary-color);
+      padding: 0.625rem 1.25rem;
+      border-radius: 0.125rem;
     }
   }
   .image {

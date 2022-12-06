@@ -22,8 +22,9 @@
 .second {
   background-color: var(--text-bg-title-lightgreen);
   color: var(--primary-color);
-  border-radius: 2px;
-  padding: 0 10px;
+  border-radius: 0.125rem;
+  padding: 0 0.625rem;
+  margin-left: 0.625rem;
 }
 
 a {

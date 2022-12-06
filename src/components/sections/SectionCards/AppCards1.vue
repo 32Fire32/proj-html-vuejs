@@ -47,13 +47,13 @@ export default {
         background-color: transparent;
         i {
           font-size: 1.5rem;
-          padding: 10px;
+          padding: 0.625rem;
         }
         i:hover {
           background-color: #d5e7e8;
           color: var(--primary-color);
           border-radius: 100%;
-          padding: 10px;
+          padding: 0.625rem;
           cursor: pointer;
         }
       }
