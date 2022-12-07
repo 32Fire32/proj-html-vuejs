@@ -58,11 +58,13 @@ export default {
         <h2 class="second">Projects</h2>
       </div>
       <nav class="light-text">
+        <!-- ciclo nav -->
         <div v-for="link in links">
           <a href="#">{{ link }}</a>
         </div>
       </nav>
       <div class="cards">
+        <!-- ciclo immagini -->
         <div v-for="card in cards">
           <AppCards3 :img="card.idsrc" :title="card.title" />
         </div>

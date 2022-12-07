@@ -49,12 +49,10 @@ export default {
         </div>
       </div>
     </div>
-
+    <!-- sezione hero -->
     <div class="hero">
       <AppBackground />
-
       <div class="container">
-        <!-- main header -->
         <div class="mainHeader center-align">
           <div><img class="logo" src="../assets/logo.PNG" alt="logo" /></div>
           <!-- navigation -->
@@ -69,6 +67,7 @@ export default {
             </div>
           </nav>
         </div>
+        <!-- contenuto centrale -->
         <div class="mainTitle">
           <div class="title">
             <h1 class="first">Ready</h1>
@@ -85,6 +84,7 @@ export default {
         </div>
       </div>
     </div>
+    <!-- effetto barra laterale -->
     <div class="v-nav">
       <div></div>
       <div class="full"></div>

@@ -45,6 +45,7 @@ export default {
         </div>
       </div>
     </div>
+    <!-- barra inferiore -->
     <div class="black">
       <div class="container">
         <div class="partners center-align">

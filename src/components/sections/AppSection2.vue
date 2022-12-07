@@ -51,6 +51,7 @@ export default {
           </div>
         </div>
         <div class="cards">
+          <!-- ciclo card informazioni -->
           <div v-for="card in cards">
             <AppCards2 :img="card.src" :title="card.title" />
           </div>
@@ -60,6 +61,7 @@ export default {
           <button class="btn-dark">READ MORE</button>
         </div>
       </div>
+      <!-- immagine a destra -->
       <div class="image">
         <img src="../../assets/about-4.jpg" alt="" />
       </div>

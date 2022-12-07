@@ -142,7 +142,6 @@ footer {
       border: 1px solid var(--primary-color);
     }
   }
-
   // postfooter
   .postfooter {
     background-color: black;
