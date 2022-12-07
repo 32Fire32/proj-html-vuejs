@@ -82,7 +82,7 @@ section {
   }
   .firstAbout {
     color: #fff;
-    background-color: var(--text-bg-title-green);
+    background-color: rgba($color: #0e272d, $alpha: 0.6);
     padding: 0.3125rem 1.25rem;
     margin-right: 0.3125rem;
   }
