@@ -55,7 +55,7 @@ export default {
       <div class="container">
         <div class="row">
           <div class="card">
-            <img src="../assets/logoinv.png" alt="logobl" />
+            <img src="../assets/svg-7.svg" alt="logobl" />
             <p class="light-text t">
               A functional HTML Template for Corporate & Business.
             </p>
