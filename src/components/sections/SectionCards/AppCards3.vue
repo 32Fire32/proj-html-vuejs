@@ -31,8 +31,17 @@ export default {
   width: calc(var(--container) / 3 - 2.5rem);
   margin: var(--margin-small);
   position: relative;
+  .hide {
+    display: none;
+    p:first-child {
+      top: 65%;
+    }
+    p:last-child {
+      font-size: 0.8rem;
+    }
+  }
+
   a {
-    text-decoration: none;
     color: #fff;
     position: absolute;
     top: 1.25rem;
@@ -52,19 +61,6 @@ p {
   transform: translate(-10%, -50%);
   color: #fff;
   font-size: 1.2rem;
-}
-.hide {
-  display: none;
-  p:first-child {
-    top: 65%;
-  }
-  p:last-child {
-    font-size: 0.8rem;
-  }
-}
-
-.card:hover {
-  cursor: pointer;
 }
 
 .card:hover img {

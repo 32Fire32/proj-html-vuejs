@@ -83,16 +83,16 @@ section {
     background-color: var(--primary-color);
     color: #fff;
     border: none;
-    padding: 10px 20px;
-    border-radius: 2px;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.125rem;
     cursor: pointer;
   }
   .btn:hover {
     color: var(--primary-color);
     background-color: #fff;
     border: 1px solid var(--primary-color);
-    padding: 10px 20px;
-    border-radius: 2px;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.125rem;
   }
 
   .titleSection {
@@ -127,7 +127,6 @@ section {
           top: calc(50% - 8px);
         }
       }
-
       .up,
       .middle,
       .bottom {

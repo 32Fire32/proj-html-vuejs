@@ -20,6 +20,7 @@ export default {
 
 <template>
   <AppSection1 />
+  <!-- componenti bullet in posizione assoluta -->
   <div class="relative">
     <div class="top">
       <AppBullets />

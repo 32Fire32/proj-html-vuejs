@@ -54,7 +54,7 @@ export default {
     <div class="bg">
       <div class="container">
         <div class="row">
-          <div class="card grow">
+          <div class="card">
             <img src="../assets/logoinv.png" alt="logobl" />
             <p class="light-text t">
               A functional HTML Template for Corporate & Business.
@@ -79,12 +79,14 @@ export default {
             </div>
             <button class="btn-dark">GET IN TOUCH</button>
           </div>
+          <!-- cycle links -->
           <div class="card" v-for="card in cards">
             <AppCardsFooter :title="card.title" :link="card.links" />
           </div>
         </div>
       </div>
     </div>
+    <!-- postfooter -->
     <div class="postfooter">
       <div class="container wrapper light-text">
         <span>Enjoy the price. We are tracking any intention of piracy</span>
@@ -111,6 +113,17 @@ footer {
     align-items: center;
     .card {
       width: calc(var(--container) / 4 - 1.25rem);
+      .infos {
+        margin: 0.625rem 0;
+        color: --text-color-light;
+        display: flex;
+        flex-direction: column;
+
+        .fa-solid {
+          margin-right: 0.625rem;
+          margin: 0.625rem 0;
+        }
+      }
       img {
         width: 50%;
         margin-bottom: 0.625rem;
@@ -129,6 +142,8 @@ footer {
       border: 1px solid var(--primary-color);
     }
   }
+
+  // postfooter
   .postfooter {
     background-color: black;
     .wrapper {
@@ -140,27 +155,6 @@ footer {
         color: var(--primary-color);
       }
     }
-  }
-}
-.right {
-  width: 30%;
-  padding: var(--padding-small);
-  .t {
-    margin-bottom: var(--margin-small);
-  }
-  h3 {
-    margin-bottom: var(--margin-small);
-  }
-}
-.infos {
-  margin: 0.625rem 0;
-  color: --text-color-light;
-  display: flex;
-  flex-direction: column;
-
-  .fa-solid {
-    margin-right: 0.625rem;
-    margin: 0.625rem 0;
   }
 }
 </style>

@@ -4,36 +4,7 @@
   margin-right: auto;
 }
 
-.introSection {
-  color: var(--primary-color);
-  font-weight: 900;
-  font-size: 0.7rem;
-}
-
 .center-align {
   display: flex;
   align-items: center;
-}
-
-.first {
-  color: var(--text-color-dark);
-}
-
-.second {
-  background-color: var(--text-bg-title-lightgreen);
-  color: var(--primary-color);
-  border-radius: 0.125rem;
-  padding: 0 0.625rem;
-  margin-left: 0.625rem;
-}
-
-a {
-  text-decoration: none;
-}
-
-.introSection {
-  color: var(--primary-color);
-  font-weight: 900;
-  font-size: 1rem;
-  margin-bottom: var(--margin-small);
 }

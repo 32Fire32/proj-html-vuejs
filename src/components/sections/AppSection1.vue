@@ -60,7 +60,7 @@ export default {
           <button class="btn">SEE ALL</button>
         </div>
       </div>
-
+      <!-- card cycle -->
       <div class="cards">
         <div v-for="card in cards">
           <AppCards1 :img="card.idsrc" :title="card.title" />

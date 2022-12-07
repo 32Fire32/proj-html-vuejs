@@ -11,7 +11,7 @@ export default {
 <template>
   <div class="card">
     <div class="tb-padding">
-      <div class="top">
+      <div class="top center-align">
         <img :src="`src/assets/svg-${img}.svg`" :alt="title" />
         <div class="btncard">
           <button><i class="fa-sharp fa-solid fa-arrow-right"></i></button>
@@ -35,9 +35,7 @@ export default {
   padding: 1.875rem;
   margin: 1.25rem 0;
   .top {
-    display: flex;
     justify-content: space-between;
-    align-items: center;
     .btncard {
       text-align: center;
       line-height: 0.0625rem;

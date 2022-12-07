@@ -31,19 +31,13 @@ export default {
   h3 {
     margin-bottom: var(--margin-small);
   }
-  ul {
-    list-style: none;
-
-    li {
-      margin-bottom: 0.625rem;
-      a {
-        text-decoration: none;
-        color: var(--text-color-light);
-      }
-
-      i {
-        margin-right: 0.625rem;
-      }
+  li {
+    margin-bottom: 0.625rem;
+    a {
+      color: var(--text-color-light);
+    }
+    i {
+      margin-right: 0.625rem;
     }
   }
 }

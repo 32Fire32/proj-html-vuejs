@@ -96,7 +96,6 @@ export default {
     width: 70%;
 
     a {
-      text-decoration: none;
       color: var(--text-color-light);
     }
   }

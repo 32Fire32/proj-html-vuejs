@@ -5,7 +5,39 @@ body {
   font-family: "Libre Franklin", sans-serif;
 }
 
+// paragraphs style
 .light-text {
   font-weight: 100;
   color: var(--text-color-light);
+}
+
+//link style
+a {
+  text-decoration: none;
+}
+
+// list style
+ul {
+  list-style: none;
+}
+
+//intro text style
+.introSection {
+  color: var(--primary-color);
+  font-weight: 900;
+  font-size: 1rem;
+  margin-bottom: var(--margin-small);
+}
+
+//main title sections style
+.first {
+  color: var(--text-color-dark);
+}
+
+.second {
+  background-color: var(--text-bg-title-lightgreen);
+  color: var(--primary-color);
+  border-radius: 0.125rem;
+  padding: 0 0.625rem;
+  margin-left: 0.625rem;
 }

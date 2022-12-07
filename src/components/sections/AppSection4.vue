@@ -37,6 +37,7 @@ export default {
           <h2>in Numbers</h2>
         </div>
         <div class="numbers">
+          <!-- cycle numbers -->
           <div v-for="number in numbers">
             <h3>{{ number.num }}</h3>
             <p>{{ number.descr }}</p>
@@ -47,6 +48,7 @@ export default {
     <div class="black">
       <div class="container">
         <div class="partners center-align">
+          <!-- cycle partners -->
           <div v-for="idsrc in idsrcs">
             <img :src="`src/assets/logo-${idsrc}.png`" :alt="idsrc" />
           </div>

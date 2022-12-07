@@ -12,8 +12,8 @@ export default {
 
 <style scoped lang="scss">
 .bullets {
-  width: 120px;
-  height: 55px;
+  width: 7.5rem;
+  height: 3.4375rem;
 
   img {
     width: 100%;
