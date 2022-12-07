@@ -21,16 +21,10 @@ export default {
         <form>
           <div class="up">
             <div class="name">
-              <input
-                class="rel"
-                type="text"
-                placeholder="Name"
-                pattern="[A-Za-z]"
-                required
-              />
+              <input class="rel" type="text" placeholder="Name" required />
               <img src="../../assets/image (1).png" alt="form" />
             </div>
-            <input type="number" placeholder="Phone" />
+            <input type="text" placeholder="Phone" />
           </div>
           <div class="middle">
             <input type="email" placeholder="Email" />
