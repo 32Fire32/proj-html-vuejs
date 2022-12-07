@@ -24,7 +24,12 @@ export default {
               <input class="rel" type="text" placeholder="Name" required />
               <img src="../../assets/image (1).png" alt="form" />
             </div>
-            <input type="text" placeholder="Phone" />
+            <input
+              type="text"
+              placeholder="Phone"
+              pattern="[0-9].{8,}"
+              title="Eight or more numbers"
+            />
           </div>
           <div class="middle">
             <input type="email" placeholder="Email" />
