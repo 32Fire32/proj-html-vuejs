@@ -110,13 +110,6 @@ section {
         cursor: pointer;
       }
     }
-    .btn:hover {
-      color: #fff;
-      background-color: var(--secondary-color);
-      border: 0.0625rem solid var(--primary-color);
-      padding: 0.625rem 1.25rem;
-      border-radius: 0.125rem;
-    }
   }
   .image {
     width: 50%;

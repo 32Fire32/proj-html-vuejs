@@ -99,13 +99,6 @@ p {
 .sloganSection {
   justify-content: space-between;
   width: 100%;
-  .btn:hover {
-    color: var(--primary-color);
-    background-color: #eef4ed;
-    border: 1px solid var(--primary-color);
-    padding: 0.625rem 1.25rem;
-    border-radius: 0.125rem;
-  }
   .text {
     width: 70%;
   }
