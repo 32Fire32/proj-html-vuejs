@@ -165,7 +165,7 @@ header {
     padding-top: var(--padding-small);
     height: 53.125rem;
     position: relative;
-    background-image: url(../assets/bg-parallax.png);
+    background-image: url("src/assets/bg-parallax.png");
     background-position: center;
     .mainTitle {
       width: calc(var(--container) / 3);

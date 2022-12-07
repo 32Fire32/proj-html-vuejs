@@ -61,7 +61,7 @@ export default {
 
 <style scoped lang="scss">
 section {
-  background-image: url(../../assets/bg-7.jpg);
+  background-image: url("src/assets/bg-7.jpg");
   background-position: bottom;
   .top {
     padding-top: 5rem;
